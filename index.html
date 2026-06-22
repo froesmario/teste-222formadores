@@ -1,1 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossário de Tecnologia e Robótica</title>
+    <style>
+        :root {
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --text-color: #333333;
+            --text-muted: #666666;
+        }
 
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 3px solid var(--accent-color);
+            padding-bottom: 15px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+        }
+
+        /* Estilização do Glossário */
+        glossary-list {
+            margin-top: 20px;
+        }
+
+        dt {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-top: 25px;
+            position: relative;
+            padding-left: 15px;
+        }
+
+        /* Detalhe visual antes de cada termo */
+        dt::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 25%;
+            height: 50%;
+            width: 5px;
+            background-color: var(--accent-color);
+            border-radius: 3px;
+        }
+
+        dd {
+            font-size: 1.05rem;
+            color: var(--text-muted);
+            margin-left: 15px;
+            margin-top: 5px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eef2f5;
+        }
+
+        dd:last-of-type {
+            border-bottom: none;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Glossário de Tecnologia</h1>
+        <p class="subtitle">Termos essenciais de Robótica, Eletrônica e Programação</p>
+
+        <dl id="glossary-list">
+            
+            <dt>Potenciômetro</dt>
+            <dd>Componente eletrônico que possui resistência elétrica ajustável. Na robótica, é muito utilizado para controlar o volume de som, a luminosidade de LEDs ou para detectar a posição angular de um eixo (como um botão giratório).</dd>
+
+            <dt>Prototipar</dt>
+            <dd>O ato de criar um modelo preliminar, funcional e rápido de um projeto (seja um circuito na protoboard ou um software). Serve para testar ideias, validar hipóteses e corrigir erros antes da produção final.</dd>
+
+            <dt>Prompt</dt>
+            <dd>Uma linha de texto, comando ou instrução fornecida a um sistema computacional ou Inteligência Artificial para que ele execute uma tarefa específica ou gere uma resposta esperada.</dd>
+
+            <dt>Ânodo</dt>
+            <dd>O terminal ou polo positivo de um componente eletrônico (como um LED ou uma bateria) por onde a corrente elétrica convencional entra no dispositivo.</dd>
+
+            <dt>Cátodo</dt>
+            <dd>O terminal ou polo negativo de um componente eletrônico por onde a corrente elétrica convencional sai do dispositivo. No caso de um LED, costuma ser a perna mais curta.</dd>
+
+        </dl>
+
+        <footer>
+            <p>&copy; 2026 - Desenvolvido para fins educacionais.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
